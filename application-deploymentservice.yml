@@ -5,11 +5,11 @@ metadata:
   labels:
     app: flask-hello
 spec:
-  conatiners:
-  - name: falsk-container
+  containers:
+  - name: flask-container
     image: kunchalavikram/flask-simplehello:v1
     ports:
-    - conatinerport: 5000
+    - conatinerPort: 5000
 ---
 apiVersion: v1
 kind: Service
@@ -32,11 +32,11 @@ metadata:
   labels: 
     app: flask-greet
 spec:
-  conatiners:
-  - name: falsk-container
+  containers:
+  - name: flask-container
     image: kunchalavikram/flask-simplegreet:v1
     ports:
-    - conatinerport: 5000
+    - conatinerPort: 5000
 ---
 apiVersion: v1
 kind: Service
@@ -60,11 +60,11 @@ metadata:
   labels: 
     app: flask-details
 spec:
-  conatiners:
-  - name: falsk-container
+  containers:
+  - name: flask-container
     image: kunchalavikram/flask-simpledetails:v1
     ports:
-    - conatinerport: 5000
+    - conatinerPort: 5000
 ---
 apiVersion: v1
 kind: Service
